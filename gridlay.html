@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            background-color: lightpink;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            gap: 20px;
+            grid-template-areas: 'hd hd hd'
+            "n m s" "ft ft ft ";
+            height: 100vh;
+            padding: 10px;
+            grid-template-rows: 1fr 1fr 1fr;
+            flex-wrap: wrap;
+        }
+        div{
+            text-align: center;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .header{
+            background-color: blue;
+            grid-area: hd;
+            height: 60px;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav{
+            background-color: aquamarine;
+            grid-area: n;
+            height: 600px;
+        }
+        .main{
+            background-color: rgb(235, 64, 64);
+            grid-area: m;
+        }
+        .side{
+            background-color: rgb(54, 87, 219);
+            grid-area: s;
+        }
+        .footer{
+            border-color:green
+            grid-area: ft;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">
+            <h1> NEWS BLOG</h1>
+        </div>
+        <div class="nav"></div>  
+          <div class="main">main</div>
+          <div class="side">side</div>
+          <div class="footer">footer</div>
+    </div>
+</body>
+</html>

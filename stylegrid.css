@@ -1,0 +1,37 @@
+.grid{
+    background-color: rgb(181, 101, 43);
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-areas: 'h h h'
+    'n mm s' 'f f f';
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.head{
+    background-color: darkslateblue;
+    grid-area: h;
+}
+.head{
+    background-color: rgb(61, 134, 139);
+    grid-area: n;
+}
+.head{
+    background-color: rgb(203, 242, 76);
+    grid-area: m;
+}
+.head{
+    background-color: rgb(139, 61, 92);
+    grid-area: sb;
+}
+.head{
+    background-color: rgb(61, 139, 65);
+    grid-area: f;
+}
+.grid div{
+    border: 2px solid black;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 1em;
+            background-color: aquamarine;
+        }
+      
+        .container{
+            text-align: center;
+           display: block;
+           justify-content: center;
+           width: 90%;
+           height: 100vh;
+           margin:  0px;
+           border: 5px;
+        }
+       
+        .contentbox{
+                display: block;
+                background-color: brown;
+                padding: 1px;
+               
+            }
+        @media(min-width:200px)and(max-width:400px)
+        {
+          .contentainer{
+            display: block;
+            background-color: blue;
+          } 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="imgbox">
+            <img src="D:\css\img\dummy.jpeg"width 200% height="100%">
+        </div>
+        <div class="contentbox">
+            <div class="content">
+                <h2>Login Form</h2>
+                <div class="input">
+                    <label for="username">username
+                    <input type="text" placeholder="entername"></label>
+                    </div><br>
+                    <div class="input">
+                    <label for="psd">Password
+                    <input type="text" placeholder="password"></label><br>
+                </div><br>
+                
+                <div class="input">
+                    <label for="chck">
+               <input type="button" id="chck">Remember me
+                </label>
+                </div>
+                <div class="input">
+                    <button>cancel</button>
+                </div><br>
+                <div class="input">
+                    <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

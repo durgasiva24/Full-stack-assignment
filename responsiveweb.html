@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(87, 204, 165);
+            display: block;
+            border: 2px solid black;
+           
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            
+
+        }
+        .header{
+            justify-content: center;
+            align-items: center;
+        }
+        .section{
+            display: block;
+            justify-content: center;
+            text-align: center;
+            font-size: 1em;
+            height: 25vh;
+        background: url("https://static.vecteezy.com/system/resources/thumbnails/028/240/906/small_2x/beauty-of-nature-picturesque-landscap-generative-ai-free-photo.jpg");
+        }
+        a{
+            display: right;
+            float: right;
+        }
+        @media (min-width:400px) and (Max-width:600px)
+        {
+            .section,footer,body{
+                display: block;
+                background-color: rgb(234, 145, 21);
+
+                    }
+        }
+        @media (min-width:600px) and (Max-width:900px)
+        {
+            .section,footer,body{
+                display: block;
+              background-color: rgb(137, 155, 21);  
+                 /* background-image: image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN6Z5fsxwmKCixCZiS1rkUE55tBKpjBBMpyA&s");*/
+            }
+        }
+        @media (min-width:900px) and (Max-width:1200px)
+        {
+            body{
+                display: block;
+              background-color: rgb(52, 84, 210);
+              /*background-image: image("https://www.shutterstock.com/shutterstock/photos/2198009967/display_1500/stock-photo-autumn-forest-path-orange-color-tree-red-brown-maple-leaves-in-fall-city-park-nature-scene-in-2198009967.jpg");*/
+            }
+            @media(orientation: landscape){
+                body{
+                    flex-direction: row;
+                }
+            }
+            @media(orientation: portrait){
+                body{
+                    flex-direction: column;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3Q5xLUzCu3wHRI1BgLp4oeCgMziCGbw0hMMKCAbLiibvlDBSJe_u2BGW2ot90PjWN4s&usqp=CAU" width="100px" height="100px">
+    </div>
+   
+    <div class="section">    
+        
+            <label for="username">username
+            <input type="text" placeholder="entername"></label><br>
+            <br>
+            <label for="psd">Password
+            <input type="text" placeholder="password"></label><br>
+        <br>
+        <button>Login</button>
+    </div>
+    <div class="footor">
+        <input type="checkbox" name="chck">Remember ME<br>
+
+        <a href= "" >Forgot Password</a> </div>
+</body>
+</html>
